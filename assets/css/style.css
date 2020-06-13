@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+/* Color Palette */
+:root {
+    --primary: rgba(211, 211, 211, 1);
+    --secondary: rgba(34, 34, 34, 1);
+    --tertiary: rgba(49, 52, 61, 1);
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgba(238, 238, 247, 1);
+  }  
+
 body {
-    background-color: lightgray;
+    background-color: var(--primary);
+    color: var(--secondary);
+    line-height: 1.5;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -17,8 +28,8 @@ header {
 
 header h1 {
     font-weight: bold;
-    background-color: rgb(34, 34, 34);
-    color: lightgray;
+    background-color: var(--secondary);
+    color: var(--primary);
     font-size: 3.5vw;
     padding: 5px 1% 5px 5%;
 }
@@ -27,6 +38,7 @@ header a {
     text-decoration: none;
 }
 
+/* Nav Bar */
 nav {
     margin: 20px 0;
 }
@@ -41,26 +53,27 @@ nav ul {
 
 nav ul li a {
     padding: 10px 15px;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1.75vw;
 }
 
 nav ul li a:visited {
-    color: black;
+    color: var(--secondary);
 }
 
 nav ul li a:hover {
-    background: rgb(34, 34, 34);
-    color: lightgray;
+    background: var(--secondary);
+    color: var(--primary);
 }
 
+/* Banner */
 .banner-hero {
     background-image: url("../images/circle-2696910_1920.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 20px 35px;
-    color: lightgray;
+    color: var(--primary);
     font-weight: bold;
     width: 100%;
     min-height: 300px;
@@ -74,4 +87,51 @@ nav ul li a:hover {
 
 .banner-content {
     margin: auto;
+}
+
+/* About Me */
+.about-me {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.about-me h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 40px;
+    border-right: 4px solid var(--secondary);
+    font-size: 4vw;
+    line-height: 1;
+  }
+
+  .about-me ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.skills {
+    padding-top: 20px;
+}
+
+.skills h3 {
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--secondary);
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.my-work {
+    display: flex;
+}
+
+footer {
+    display: flex;
 }
