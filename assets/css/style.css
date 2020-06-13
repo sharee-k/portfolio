@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 0;
+}
+
+header h1 {
+    font-weight: bold;
+    background-color: rgb(34, 34, 34);
+    color: lightgray;
+    font-size: 3.5vw;
+    padding: 5px 1% 5px 5%;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.75vw;
+}
+
+nav ul li a:visited {
+    color: black;
+}
+
+nav ul li a:hover {
+    background: rgb(34, 34, 34);
+    color: lightgray;
+}
+
+.banner-hero {
+    background-image: url("../images/circle-2696910_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px 35px;
+    color: lightgray;
+    font-weight: bold;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner-picture {
+    margin: auto;
+}
+
+.banner-content {
+    margin: auto;
+}
