@@ -13,7 +13,7 @@
 This project was built with HTML and CSS.
 
 ## Screenshots
-![Website Screenshot 1](./assets/images/wesite-image-1.png)
+![Website Screenshot 1](./assets/images/website-image-1.png)
 
 ## Link
 https://sharee-k.github.io/portfolio/

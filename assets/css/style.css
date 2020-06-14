@@ -30,7 +30,6 @@ header h1 {
     color: var(--primary);
     font-size: 3.5vw;
     padding: 5px 1% 5px 5%;
-    margin: 0;
 }
 
 header a {
