@@ -30,7 +30,7 @@ header h1 {
     color: var(--primary);
     font-size: 3.5vw;
     padding: 5px 1% 5px 5%;
-    margin: auto;
+    margin: 0;
 }
 
 header a {
@@ -226,9 +226,13 @@ nav a {
     color: var(--primary);
   }  
 
-/* Media queries */
+/* Media query tablets and smaller */
 
 @media screen and (max-width: 768px) {
+    header h1 {
+        margin: auto
+    }
+
     nav a, .banner-content {
         font-size: 3vw;
         margin-right: 0;
@@ -250,7 +254,6 @@ nav a {
 
     .skills {
         padding-top: 20px;
-        width: 200px;
     }
 
     .skills h3 {
@@ -267,6 +270,7 @@ nav a {
     }
 
     .contact-info {
-        display: block;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
