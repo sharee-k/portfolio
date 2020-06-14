@@ -114,6 +114,14 @@ nav a {
     line-height: 1;
   }
 
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 20px;
+    margin: auto;
+}
+
 .about-me ul {
     list-style: none;
 }
@@ -138,14 +146,6 @@ nav a {
 .skills ul li {
     padding: 5px;
     font-size: 1.5vw;
-}
-
-.section-content {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    padding-left: 20px;
-    margin: auto;
 }
 
 /* My Work section styles */
@@ -192,3 +192,26 @@ nav a {
 .contact-info {
     font-size: 1.5vw;
 }
+
+.contact-info a:visited {
+    color: var(--secondary);
+}
+
+.contact-info a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 4px;
+    background-position: bottom;
+    transition: 0.5s;
+    font-weight: 900;
+    font-size: 1.7vw;
+  }
+  
+  .contact-info a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+  }  
